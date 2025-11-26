@@ -34,12 +34,12 @@ const Onboarding = () => {
     if (currentSlide < slides.length - 1) {
       setCurrentSlide(currentSlide + 1);
     } else {
-      navigate('/login');
+      navigate('/home');
     }
   };
 
   const handleSkip = () => {
-    navigate('/login');
+    navigate('/home');
   };
 
   return (

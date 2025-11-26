@@ -67,7 +67,7 @@ const Profile = () => {
       title: "Déconnecté",
       description: "À bientôt !"
     });
-    navigate('/login');
+    navigate('/home');
   };
 
   return (

@@ -31,7 +31,8 @@ function App() {
       </Helmet>
       <div className="min-h-screen bg-[#F7F7F7]">
         <Routes>
-          <Route path="/" element={<Onboarding />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/momo-login" element={<MoMoLogin />} />
@@ -50,7 +51,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/support" element={<Support />} />
           <Route path="/design-system" element={<DesignSystem />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
         </Routes>
         <Toaster />
       </div>
